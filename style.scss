@@ -1,0 +1,204 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+body {
+    margin:100px;
+    
+    background: linear-gradient(to right, #004e92, #000428); 
+    color:white;
+    font-family: 'Cantarell', sans-serif;
+
+}
+.sections {
+    display:flex;
+    flex-direction: row;
+}
+h1 {
+    letter-spacing: 10px;
+    font-size:3em;
+    background-color: rgba($color: indigo, $alpha: 0.2) ;
+    padding:20px;
+    text-align: center;
+    border-radius: 40px 0px;
+    font-family: 'Bungee Shade', cursive;
+
+}
+h2 {
+    font-family: 'Barriecito', cursive;
+    font-size:2em;
+    letter-spacing: 6px;
+    background-color: #1e88e5;
+    padding:10px  ;
+    margin-top:-20px;
+
+}
+#wordS, #wordD, #wordU {
+    background-color:rgba($color: #000000, $alpha: 0.5);
+    padding:10px;
+    border-radius: 40px 40px;
+    font-family: 'Nerko One', cursive;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+section {
+    border:5px solid white;
+    min-width: 400px;
+    max-width: 400px;
+  
+    min-height: 400px;
+    max-height:800px;
+    border-radius:20px 20px;
+    display:inline-block;
+    text-align:center;
+    margin-right:40px;
+    margin-left:40px;
+    justify-content: center;
+    align-items: center;
+    padding:30px;
+    margin-bottom:50px;
+    margin-top:30px;
+    
+}
+#sections {
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin:auto;
+    
+}
+footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+#form {
+    display:flex;
+    justify-content: center;
+    input {
+        margin-bottom:20px;
+        background-color: transparent;
+        padding:20px;
+        border:5px dashed orangered;
+        outline: none;
+        margin-right:50px;
+        color:white;
+        text-align:center;
+        font-size: 1.2em;
+        letter-spacing: 5px;
+        cursor:pointer;
+        transition: all 1s ease;
+        &:focus {
+            background-color: black;
+            color:white;
+            border:7px solid goldenrod;
+        }
+        &:hover {
+            border-color:goldenrod;
+            input::placeholder {
+                color:golden;
+                opacity:1;
+            }
+        }
+        
+    }
+}
+::placeholder {
+    color:white;
+    opacity:0.7;
+    :focus {
+        color:red;
+    }
+}
+button {
+    margin-bottom:20px;
+    padding:15px;
+    text-align: center;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    color:white;    
+    border:5px solid blueviolet;
+    border-radius: 29px 29px;
+    text-decoration: yellowgreen;
+    transition: all 0.5s ease;
+    outline: none;
+    &:hover {
+        border-radius:0px;
+        background-color: blueviolet;
+        border:2px solid white;
+        color:white
+    }
+    &:active {
+        color:red;
+        border-color: red;
+    }
+}
+button:nth-child(3){
+    display: none;
+}
+@media (max-width: 500px){
+    body {
+        margin:0;
+        padding:0;
+        
+    }
+    h1 {
+        font-size:2em;
+        width:100%;
+        border-radius: 0px;
+        padding:0;
+        background-color: #2980b9;
+    }
+    h2 {
+        font-size:1em;
+    }
+    .sections {
+        display:flex;
+        flex-direction: column;
+    }
+    section {
+        display:flex;
+        flex-direction: column;
+        min-width:calc(100vw - 200px);
+        max-height:10000px;
+    }
+    #form {
+        margin:0;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    input {
+        margin-left:50;
+        display: flex;
+        justify-content: center;
+        margin-bottom:20px;
+    }
+    button {
+        margin-bottom:50px;
+    }
+    h2 {
+        display:flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        // margin-top:-290px;
+    }
+    #wordS, #wordD, #wordU {
+        background-color:rgba($color: #000000, $alpha: 0.5);
+        margin-top:-8;
+        padding:10px;
+        border-radius: 40px 40px;
+        font-family: 'Nerko One', cursive;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+    }
+
+}

@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thesaurus by Sipa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="1.png" type="image/x-icon">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <meta name="theme-color" content="#004e92">
+</head>
+<body>
+    <header>
+        <h1>Synonyms, definitions & more...</h1>
+    </header>
+    <main>
+        <div id="form" >
+            <input type="text" name="word" id="word" placeholder="Type a word" required>
+            <button type="submit" onclick="wyszukaj()" >Check</button>
+            <button type="reset" onclick="location.reload(true)">Find more</button>
+        </div>
+        <div class="sections">
+        <section class="synonyms">
+            <h2>Synonyms</h2>
+            <p id="wordS">Word</p>
+            <ul class="synonyms">
+
+            </ul>
+        </section>
+        <section class="definitions">
+            <h2>Definitions</h2>
+            <p id="wordD">Word</p>
+            <ul class="def">
+
+            </ul>
+        </section>
+        <section class="use">
+           <h2>Use of the word</h2>
+           <p id="wordU">Word</p>
+           <ul class="use">
+
+           </ul>
+        </section>
+    </div>
+    </main>
+    <footer>
+        Created  by Przemysław Sipa &copy; 2020
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

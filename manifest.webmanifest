@@ -1,0 +1,38 @@
+{
+    "short_name": "PWA SIPA",
+    "name": "Words for you",
+    "description": "More about words",
+    "icons": [
+      {
+        "src": "1.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "1.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "index.html",
+    "background_color": "#004e92",
+    "display": "fullscreen",
+    "scope": "/",
+    "theme_color": "#004e92",
+    "shortcuts": [
+      {
+        "name": "PWA Sipa",
+        "short_name": "App Sipa",
+        "description": "Words",
+        "url": "index.html",
+        "icons": [{ "src": "/images/today.png", "sizes": "192x192" }]
+      },
+      {
+        "name": "",
+        "short_name": "",
+        "description": "",
+        "url": "index.html",
+        "icons": [{ "src": "1.png", "sizes": "192x192" }]
+      }
+    ]
+  }
